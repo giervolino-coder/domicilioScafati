@@ -1,6 +1,6 @@
 {
-  "name": "Ferrara a Domicilio",
-  "short_name": "FerraraDomicilio",
+  "name": "Nocera Inferiore a Domicilio",
+  "short_name": "NocInfADomicilio",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
