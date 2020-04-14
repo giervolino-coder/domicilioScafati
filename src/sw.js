@@ -30,7 +30,7 @@ workbox.routing.registerRoute(
 	new workbox.strategies.NetworkFirst({
 		// this cache is plunged with every new service worker deploy so we dont need to care about purging the cache.
 		cacheName: workbox.core.cacheNames.precache,
-		networkTimeoutSeconds: 5, // if u dont start getting headers within 5 sec fallback to cache.
+		networkTimeoutSeconds: 1, // if u dont start getting headers within 5 sec fallback to cache.
 		plugins: [
 			new workbox.cacheableResponse.Plugin({
 				statuses: [200],
