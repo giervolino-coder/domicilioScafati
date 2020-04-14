@@ -6,6 +6,28 @@ export default function Form() {
 					<input type="hidden" name="form-name" value="contact" />
 				</p>
 				<p class="my-5">
+					<label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Categoria
+					<select class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" required="" name="type">
+					<option disabled="disabled" value="">Seleziona una categoria</option>
+					<option value="Salute">Salute</option>
+					<option value="Gelaterie">Gelateria</option>
+					<option value="Macellerie">Macelleria</option>
+					<option value="Panifici">Panifici</option>
+					<option value="Generi alimentari">Generi Alimentari</option>
+					<option value="Ristorazione">Ristorazione</option>
+					<option value="Pasta fresca e primi piatti">Pasta fresca e primi piatti</option>
+					<option value="enoteca e birre">Enoteca e Birre</option>
+					<option value="Frutta fresca">Frutta Fresca</option>
+					<option value="Supermercati">Supermercati</option>
+					<option value="Pasticceria">Pasticceria</option>
+					<option value="Pizzerie">Pizzeria</option>
+					<option value="Lavanderie">Lavanderia</option>
+					<option value="Informatica">Informatica</option>
+					<option value="Prodotti per animali">Prodotti per Animali</option>
+					</select>
+  				</label>
+
+				<p class="my-5">
 					<label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Nome
 						<input class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" required type="text" name="name" />
 					</label>
