@@ -1,6 +1,6 @@
 {
   "name": "Nocera Inferiore a Domicilio",
-  "short_name": "NocInfADomicilio",
+  "short_name": "nocinfdomicilio",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
