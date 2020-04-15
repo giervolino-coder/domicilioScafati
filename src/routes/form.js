@@ -15,6 +15,7 @@ export default function Form() {
 					<option value="Gelaterie">Gelateria</option>
 					<option value="Macellerie">Macelleria</option>
 					<option value="Panifici">Panifici</option>
+					<option value="Fiorai">Fiorai</option>
 					<option value="Generi alimentari">Generi Alimentari</option>
 					<option value="Ristorazione">Ristorazione</option>
 					<option value="Pasta fresca e primi piatti">Pasta fresca e primi piatti</option>
