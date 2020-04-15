@@ -73,11 +73,11 @@ export default class App extends Component {
 								: <Link class="m-5 text-blue-500 hover:text-blue-800" href="/">Ritorna alla ricerca</Link>
 						}
 					</nav>
-					<h1 class="font-sans text-4xl md:text-5xl lg:text-6xl pt-10 text-gray-800 text-center capitalize">
+					<h1 class="font-sans text-4xl md:text-5xl lg:text-5xl pt-10 text-gray-800 text-center capitalize" style = "color:#FFC000;">
 						<span class="block sm:inline-block" role="img" aria-label="biker">
 							🚴
 						</span>
-						{`${process.env.PREACT_APP_CITY} a Domicilio`}
+						{`${process.env.PREACT_APP_CITY} a domicilio`}
 					</h1>
 					<Router onChange={this.handleRoute}>
 						<Home path="/" results={results} />
