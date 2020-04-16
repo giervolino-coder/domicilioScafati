@@ -28,7 +28,7 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 							role="img"
 							aria-label="warning"
 						>
-							ℹ️
+							
 						</span>
 					)}
 					{site && (
