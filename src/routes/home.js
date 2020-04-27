@@ -20,6 +20,27 @@ export default class Home extends Component {
       this.setState({ categoryFilter: key });
    };
 
+
+   calculateStoresNumber() {
+	const { results: stores } = this.props;
+	const keys = Object.keys(stores);
+	let storesNumber = 0;
+	for (const key of keys) {
+		storesNumber += stores[key].data.length;
+	 }
+	 return storesNumber;
+   };
+
+   getFinalSentence() {
+	 const { results: stores } = this.props;
+	 const keys = Object.keys(stores);
+	 let sentence = "";
+	 if (keys.length > 2) {
+		 sentence = "tra " + keys[0] + ", " + keys[1] + " e " + keys[2];
+	 }
+	 return sentence;
+   };
+
 	filteredCategories(filter, categoryFilter) {
 		const { results } = this.props;
 		const regex = new RegExp(`${filter}`, 'i');
@@ -43,8 +64,17 @@ export default class Home extends Component {
 		const { results: stores } = props;
 		const filteredStores = this.filteredCategories(filter, categoryFilter)
 
+		const storesNumber = this.calculateStoresNumber()
+		const finalSentence = this.getFinalSentence()
+
+
 		return (
 			<Fragment>
+				{storesNumber>0 && (
+				<div class="text-center mt-2 pb-5">
+					A <span class="capitalize">{process.env.PREACT_APP_CITY}</span> sono presenti <span class="font-semibold">{storesNumber}</span> attivit&agrave; che consegnano a domicilio
+				</div>
+				)}
 				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
 					<input
 						class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
